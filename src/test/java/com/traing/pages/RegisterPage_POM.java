@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
  * @author Chinna
  *	
  */
-public class RegisterPage {
+public class RegisterPage_POM {
 	
 	
 	

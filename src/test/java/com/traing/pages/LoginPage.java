@@ -9,9 +9,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 /**
- * Class  for login page related code
+ * Class  for login page related code using @findby
  * @author Chinna
- *
+ *	
  */
 public class LoginPage {
 

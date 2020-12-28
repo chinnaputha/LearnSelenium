@@ -4,15 +4,16 @@
 
 
 
- <test  name="Register">
+ <!-- <test  name="Register">
     <classes>
       <class name="com.training.tests.RegisterTest"/>
     </classes>
-  </test>
+  </test> -->
   
   <test  name="Login">
     <classes>
-      <class name="com.training.tests.LoginTest"/>
+   <!--    <class name="com.training.tests.LoginTest"/>  --><!-- this using POM pagefactory -->
+       <class name="com.training.tests.LoginPOMTest"/> <!--  this using POM Normal approavh -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

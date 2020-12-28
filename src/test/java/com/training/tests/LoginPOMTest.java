@@ -1,12 +1,15 @@
 package com.training.tests;
 
-import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
-import com.traing.pages.LoginPage;
+import com.traing.pages.LoginPage_POM;
 import com.training.utils.TestBaseUtils;
-
-public class LoginTest extends TestBaseUtils {
+/**
+ * Class for POM using normal approach
+ * @author Chinna.Putha
+ *
+ */
+public class LoginPOMTest extends TestBaseUtils {
 
 	@Test(alwaysRun = true)
 	public void openBrowser() {
@@ -15,9 +18,8 @@ public class LoginTest extends TestBaseUtils {
 
 	@Test(dependsOnMethods = "openBrowser")
 	public void loginFB() throws Exception {
-		LoginPage lp = PageFactory.initElements(driver, LoginPage.class);
-		lp.loginFacebook(driver);
-		captureScreenshot();
+		LoginPage_POM lp = new LoginPage_POM(driver);
+		lp.loginFacebook();
 	}
 
 }
