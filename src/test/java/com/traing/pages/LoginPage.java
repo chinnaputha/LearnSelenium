@@ -8,6 +8,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+/**
+ * Class  for login page related code
+ * @author Chinna
+ *
+ */
 public class LoginPage {
 
 	
