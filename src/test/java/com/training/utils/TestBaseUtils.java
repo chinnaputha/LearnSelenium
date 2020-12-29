@@ -47,6 +47,7 @@ public class TestBaseUtils {
 		File source_file = (File) ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(source_file, new File("images\\screenshot_"+timeStamp +".png"));
 		System.out.println("hello");
+		System.out.println("helloafds");
 	}
 	
 	/**
