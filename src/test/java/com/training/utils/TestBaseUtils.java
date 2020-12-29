@@ -46,6 +46,7 @@ public class TestBaseUtils {
 		String timeStamp = new SimpleDateFormat("ddMMyyyy_HHmmss").format(Calendar.getInstance().getTime());
 		File source_file = (File) ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(source_file, new File("images\\screenshot_"+timeStamp +".png"));
+		System.out.println("hello");
 	}
 	
 	/**
@@ -54,7 +55,7 @@ public class TestBaseUtils {
 	 * @param browser
 	 * @throws Exception
 	 */
-	public void runOnSauceLabsFromLocal(String os, String browser) throws Exception {
+	public void runOnSauceLabsFromLocal(String os, String browser) throws Exception {   
 
 		String username = "chinnareddy";
 		String access_key = "2dc27e83-55af-4c28-b4d0-73d37faa2f8a";
