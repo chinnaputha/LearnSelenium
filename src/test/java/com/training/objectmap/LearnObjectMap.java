@@ -13,5 +13,5 @@ public interface LearnObjectMap {
 	String FB_REGISTER_LASTNAME_XPATH = "//input[@name='lastname']";   
 	
 	 
-	
+	   
 }
