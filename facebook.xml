@@ -4,11 +4,11 @@
 
 
 
- <!-- <test  name="Register">
+  <test  name="Register">
     <classes>
-      <class name="com.training.tests.RegisterTest"/>
+      <class name="com.training.tests.RegisterPOMTest"/>
     </classes>
-  </test> -->
+  </test>
   
   <test  name="Login">
     <classes>
