@@ -10,7 +10,7 @@ public interface LearnObjectMap {
 	  
 	String FB_REGISTER_CREATENEWACCOUNT_XPATH = "//a[@role='button']";
 	String FB_REGISTER_FIRSTNAME_XPATH = "//input[@placeholder='First name']";
-	String FB_REGISTER_LASTNAME_XPATH = "//input[@name='lastname']"; 
+	String FB_REGISTER_LASTNAME_XPATH = "//input[@name='lastname']";  
 	
 	 
 	
