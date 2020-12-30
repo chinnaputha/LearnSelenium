@@ -3,9 +3,9 @@ package com.training.tests;
 import org.testng.annotations.Test;
 
 import com.traing.pages.NaukriLoginPage;
-import com.training.utils.NaukriTestBaseUtils;
+import com.training.utils.TestBaseUtils;
 
-public class NaukriLoginTest extends NaukriTestBaseUtils {
+public class NaukriLoginTest extends TestBaseUtils {
 
 	@Test(alwaysRun = true)
 	public void openBrowser() {
@@ -13,8 +13,9 @@ public class NaukriLoginTest extends NaukriTestBaseUtils {
 	}
 
 	@Test(dependsOnMethods = "openBrowser")
-	public void loginFB() throws Exception {
+	public void loginNaukri() throws Exception {
 		NaukriLoginPage nl = new NaukriLoginPage(driver);
 		nl.loginNaukri();
+		
 	}
 }
