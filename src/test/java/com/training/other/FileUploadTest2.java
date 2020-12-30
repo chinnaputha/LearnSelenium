@@ -21,9 +21,9 @@ public class FileUploadTest2 extends TestBaseUtils {
 
 		String filePath="autoimages/Screenshot.png";
 		File f= new File(filePath);
-		String abPath = f.getAbsolutePath();
+		String abPath = f.getAbsolutePath();//to get complete file path
 		System.out.println("complete path "+abPath);
-		browse.sendKeys("C:\\Users\\Chinna.Putha\\eclipse-workspace\\LearnSelenium\\autoimages\\Screenshot.png");
+		browse.sendKeys(abPath);
 		Thread.sleep(4000);
 
 	}
