@@ -2,20 +2,18 @@ package com.training.tests;
 
 import org.testng.annotations.Test;
 
-import com.traing.pages.NaukriLoginPage;
+import com.traing.pages.NaukriUpdatePage;
 import com.training.utils.TestBaseUtils;
 
-public class NaukriLoginTest extends TestBaseUtils {
-
+public class NaukriUpdateTest extends TestBaseUtils{
 	@Test(alwaysRun = true)
 	public void openBrowser() {
 		lanuchBrowser("https://www.naukri.com/");
 	}
 
 	@Test(dependsOnMethods = "openBrowser")
-	public void loginNaukri() throws Exception {
-		NaukriLoginPage nl = new NaukriLoginPage(driver);
-		nl.loginNaukri();
-		
+	public void updateNaukri() throws Exception {
+		NaukriUpdatePage np = new NaukriUpdatePage(driver);
+		np.updateNaukri();
 	}
 }
