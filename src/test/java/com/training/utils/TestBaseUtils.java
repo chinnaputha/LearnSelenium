@@ -38,16 +38,11 @@ public class TestBaseUtils {
 		driver.quit();
 	}
 	
-	/*public void openApplication() throws Exception {
-		System.out.println("super class method");
-	}*/
-
+	
 	public  void captureScreenshot() throws Exception {
 		String timeStamp = new SimpleDateFormat("ddMMyyyy_HHmmss").format(Calendar.getInstance().getTime());
 		File source_file = (File) ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(source_file, new File("images\\screenshot_"+timeStamp +".png"));
-		System.out.println("hello");
-		System.out.println("helloafds");
 	}
 	
 	/**
