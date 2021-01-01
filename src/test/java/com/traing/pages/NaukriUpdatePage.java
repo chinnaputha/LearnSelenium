@@ -20,9 +20,9 @@ public class NaukriUpdatePage {
 
 	public void updateNaukri() {
 
-		driver.findElement(By.xpath(NaukriObjectMap.NAUKRI_UPDATED_XPATH)).click();
+		driver.findElement(By.xpath(NaukriObjectMap.NAUKRI_UPDATE_XPATH)).click();
 		WebDriverWait wait = new WebDriverWait(driver, 20);
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(NaukriObjectMap.NAUKRI_UPDATED_XPATH)));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(NaukriObjectMap.NAUKRI_UPDATE_XPATH)));
 
  	}
 
