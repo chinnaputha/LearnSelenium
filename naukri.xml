@@ -3,9 +3,10 @@
 <suite name="Naukri">
 
 	<test name="Login">
-	
+	<!-- <parameter name="userName" value="veerabhaskar.test@gmail.com"/>
+	<parameter name="password" value="Bhaskar@123"/> -->
 		<classes>
-			<class name="com.training.tests.NaukriLoginTest" />
+			<class name="com.training.tests.NaukriTest" />
 		</classes>
 
 	</test> <!-- Test -->
