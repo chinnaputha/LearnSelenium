@@ -24,7 +24,7 @@ public class FileUploadTest2 extends TestBaseUtils {
 		String abPath = f.getAbsolutePath();//to get complete file path
 		System.out.println("complete path "+abPath);
 		browse.sendKeys(abPath);
-		Thread.sleep(4000);
-
+		Thread.sleep(4000);  
+ 
 	}
 }
